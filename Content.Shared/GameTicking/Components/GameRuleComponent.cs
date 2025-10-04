@@ -42,6 +42,12 @@ public sealed partial class GameRuleComponent : Component
     /// </summary>
     [DataField]
     public MinMax? Delay;
+
+    /// <summary>
+    /// OH-Changes - Hide gamerules from autocompletion for "addgamerule" admin commands. True by default - for filtering all vanilla gamerules.
+    /// </summary>
+    [DataField]
+    public bool Hidden = true;
 }
 
 /// <summary>

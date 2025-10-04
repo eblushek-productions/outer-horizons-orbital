@@ -1,13 +1,15 @@
-- type: gameMapPool
-  id: DefaultMapPool
-  maps:
-  - Bagel
-  - Box
-  - Elkridge
-  - Marathon
-  - Packed
-  - Plasma
-  - Exo
-  - Snowball
-  - Sushi
-  - Tram2
+# OH-Changes, импортозамещение
+
+# - type: gameMapPool
+#   id: DefaultMapPool
+#   maps:
+#   - Bagel
+#   - Box
+#   - Elkridge
+#   - Marathon
+#   - Packed
+#   - Plasma
+#   - Exo
+#   - Snowball
+#   - Sushi
+#   - Tram2

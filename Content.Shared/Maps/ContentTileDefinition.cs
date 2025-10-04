@@ -131,7 +131,7 @@ public sealed partial class ContentTileDefinition : IPrototype, IInheritingProto
     /// <summary>
     /// Hide this tile in the tile placement editor.
     /// </summary>
-    [DataField] public bool EditorHidden { get; private set; } = false;
+    [DataField] public bool EditorHidden { get; private set; } = true; // OH-Changes, скрыто для импортозамещения
 
     /// <summary>
     /// If this tile is reclaimed, what materials would come out of it?

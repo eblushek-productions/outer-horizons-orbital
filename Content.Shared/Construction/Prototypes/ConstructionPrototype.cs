@@ -23,7 +23,7 @@ public sealed partial class ConstructionPrototype : IPrototype, IInheritingProto
     ///     Hide from the construction list
     /// </summary>
     [DataField]
-    public bool Hide = false;
+    public bool Hide = true; // OH-Changes, скрыто для импортозамещения
 
     /// <summary>
     ///     Friendly name displayed in the construction GUI.
