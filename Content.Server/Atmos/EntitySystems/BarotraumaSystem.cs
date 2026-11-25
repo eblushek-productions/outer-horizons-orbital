@@ -10,6 +10,7 @@ using Content.Shared.FixedPoint;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Robust.Shared.Containers;
+using Content.Server._OuterHorizons.Atmos.Events; // OH-Changes, decompressionSystem
 
 namespace Content.Server.Atmos.EntitySystems
 {
@@ -235,6 +236,11 @@ namespace Content.Server.Atmos.EntitySystems
                     >= Atmospherics.WarningHighPressure => GetFeltHighPressure(uid, barotrauma, pressure),
                     _ => pressure
                 };
+
+                // OH-Changes-start, decompressionSystem
+                var sampledEv = new FeltPressureSampledEvent(pressure, UpdateTimer);
+                RaiseLocalEvent(uid, ref sampledEv);
+                // OH-Changes-end
 
                 if (pressure <= Atmospherics.HazardLowPressure)
                 {

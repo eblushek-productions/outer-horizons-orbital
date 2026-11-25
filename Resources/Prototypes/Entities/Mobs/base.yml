@@ -239,6 +239,17 @@
     damage:
       types:
         Blunt: 0.15 #per second, scales with pressure and other constants.
+  # OH-Changes-start, decompressionSystem
+  - type: Decompression
+    damage:
+      types:
+        Blunt: 10
+    staminaDamage: 20
+    minDropRate: 5
+    referenceDropRate: 20
+    rateExponent: 1.5
+    maxCoefficient: 10
+  # OH-Changes-end
 
 # Used for mobs that can be set on fire
 - type: entity
